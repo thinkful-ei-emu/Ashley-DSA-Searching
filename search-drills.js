@@ -44,7 +44,7 @@
 // Imagine you are looking for a book in a library with a Dewey Decimal index. 
 // How would you go about it? Can you express this process as a search algorithm? 
 // Implement your algorithm to find a book whose Dewey and book title is provided.
-//  { author: 'Cowlishaw, Mike', dewey: '005.133', title: 'The REXX Language' },
+//  [{ author: 'Cowlishaw, Mike', dewey: '005.133', title: 'The REXX Language' },
 // { author: 'Sams', dewey: '005.133', title: 'Teach Yourself C++ In 21 Days' },
 // { author: 'Stroustrup., Bjarne', dewey: '005.133', title: 'The C++ Programming Language' },
 // { author: 'Crockford, Douglas', dewey: '005.2762', title: 'JavaScript: The Good Parts' },
@@ -55,6 +55,40 @@
 // { author: 'Jane, Frederick Thomas', dewey: '623.82509051', title: 'Jane\'s Fighting Ships' },
 // { author: 'Norris, Chuck', dewey: '796.8092', title: 'The Official Chuck Norris Fact Book' }
 // ];
-function findBook(){
+// function findBook(){
 
-}
+// }
+
+
+//Q4
+//4a) Given a binary search tree whose 
+//left-parent-right
+//in order: 14 15 19 25 27 35 79 89 90 91 and
+//parent-left-right 
+//pre order: 35 25 15 14 19 27 89 79 91 90. 
+//What would be its postorder traversal?
+//left-right-parent
+//            35
+//         /     \
+//        25      89
+//       / \     /  \  
+//    15    27  79  90
+//  /   \             \
+// 14    19           91
+//                         
+//   
+//post-order:  14, 19, 15, 27, 25, 79, 91, 90, 89, 35                       
+
+//4b) The post order traversal of a binary search tree is 5 7 6 9 11 10 8.
+// What is its pre-order traversal?
+//post: left-right-parent
+
+//            8
+//         /    \ 
+//        6       10
+//      /   \    /  \
+//     5    7   9    11
+
+//pre order: parent-left-right
+
+// 8, 6, 10, 5, 7, 9, 11
