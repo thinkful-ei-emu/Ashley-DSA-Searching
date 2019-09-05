@@ -29,12 +29,12 @@ class Binary extends React.Component {
 
   binarySearch = (arr, num, start, end, steps) => {
     
-      let sortedArr = arr.sort();          
+      let sortedArr = arr.sort((a, b) => a - b);          
       start = start === undefined ? 0 : start;
       end = end === undefined ? sortedArr.length : end;
   
       if (start > end) {
-          return "Can't find number";
+          return `No number found. Took ${steps} searches`;
       }
   
       const index = Math.floor((start + end) / 2);

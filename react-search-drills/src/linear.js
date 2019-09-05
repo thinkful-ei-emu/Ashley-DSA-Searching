@@ -39,7 +39,7 @@ class Linear extends React.Component {
               return steps;
           }
       }
-      return "No number found";
+      return `No number found. Took ${steps} searches`;
   
   }
 
@@ -54,8 +54,7 @@ class Linear extends React.Component {
         <select id="linear-num" name="linear-num">
           {this.state.arr.map((num, index )=> 
             <option key={index}>{num}</option>)}
-        </select>
-      
+        </select>      
         <button type="submit">Find</button>
         </form>
         <p>Number of steps: {this.state.steps}</p>        
